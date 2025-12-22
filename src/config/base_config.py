@@ -1,4 +1,8 @@
-DATA_PATH = "data/raw/predictive_maintenance.csv"
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+DATA_PATH = PROJECT_ROOT / "data" / "raw"/ "predictive_maintenance.csv"
 
 TARGET_COLUMN = "Failure Type"
 

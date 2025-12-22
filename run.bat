@@ -6,7 +6,7 @@ echo  MACHINE FAILURE CLASSIFICATION
 echo  Final Experiment Run
 echo ==============================================
 echo  Creator: -. Muhamad Rival Maulana (230611055)
-echo           -. Isak Sabam Tambunan   (230611055)
+echo           -. Isak Sabam Tambunan   (230611132)
 echo ==============================================
 echo.
 
