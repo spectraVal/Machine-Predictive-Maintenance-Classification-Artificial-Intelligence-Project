@@ -1,10 +1,13 @@
 @echo off
 title Machine Predictive Maintenance - Final Run
 
-echo ============================================
+echo ==============================================
 echo  MACHINE FAILURE CLASSIFICATION
-echo  Final Frozen Experiment Run
-echo ============================================
+echo  Final Experiment Run
+echo ==============================================
+echo  Creator: -. Muhamad Rival Maulana (230611055)
+echo           -. Isak Sabam Tambunan   (230611055)
+echo ==============================================
 echo.
 
 REM --- Check virtual environment ---
