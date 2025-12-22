@@ -1,23 +1,15 @@
-
 # Machine Maintenance Failure Classification
 
 Penelitian ini menggunakan metode Multiclass Classification yang diawasi untuk memprediksi berbagai jenis kegagalan pemeliharaan mesin. Random Forest dengan class_weight dipilih sebagai model terakhir untuk mengatasi ketidakseimbangan kelas yang sangat besar.
 Eksperimen dasar (Logistic Regression dan Desicion Tree) disertakan untuk perbandingan dan hasil akhir dibekukan menggunakan satu kali eksekusi yang dapat diulang.
 
-
-
-
 ## Dataset Characteristic
 
 - Highly imbalanced multiclass dataset
 - Majority class: No Failure
-- Minority classes include:
-    - Heat Dissipation Failure
-    - Overstrain Failure
-    - Power Failure
-    - Tool Wear Failure
-    - Random Failures
-Because of this imbalance, accuracy is not the primary metric.
+- Minority classes include: - Heat Dissipation Failure - Overstrain Failure - Power Failure - Tool Wear Failure - Random Failures
+  Because of this imbalance, accuracy is not the primary metric.
+
 ## Final Model Configuration
 
 ```
@@ -32,6 +24,7 @@ Because of this imbalance, accuracy is not the primary metric.
 |   Execution               | Single final run  |
 |-----------------------------------------------|
 ```
+
 ## How to Run
 
 Dalam proyek ini, ada dua metode eksekusi yang dapat dipilih peninjau.
@@ -42,10 +35,18 @@ Dalam proyek ini, ada dua metode eksekusi yang dapat dipilih peninjau.
 
 Untuk menjalankan eksperimen akhir dengan aman, gunakan berkas "run.bat" yang disediakan.
 
+Pastikan Python dan virtual environment tersedia, jika belum silahkan:
+
+```
+pip install -r requirements.txt
+```
+
 **Steps:**
+
 1. Pastikan Python dan virtual environment tersedia
 2. Double-click `run.bat`
-Skrip ini akan melakukan hal-hal berikut:
+   Skrip ini akan melakukan hal-hal berikut:
+
 - Menggunakan iterpreter Python yang benar dari virtual environment
 - Menjalankan frozen final experiment
 - Menyimpan semua output ke folder `outputs/`
@@ -63,13 +64,20 @@ pip install -r requirements.txt
 venv\Scripts\python.exe -m final_run.main_final
 ```
 
+Jika ingin menjalankan file eksperimen atau keseluruhan percobaan, silahkan:
+
+```
+python -m experiments.run_experiments
+```
+
 ## Output Files
 
 All outputs are saved in:
 
-``` bash
+```bash
 outputs/final/
 ```
+
 ```
 |-------------------------------------------------------------------|
 |File Name                  | Description                           |
@@ -80,10 +88,13 @@ outputs/final/
 |model_config.csv           | Final model parameters                |
 |-------------------------------------------------------------------|
 ```
+
 ## Evaluation Notes
+
 - Macro F1-score digunakan untuk mengevaluasi kinerja keseluruhan pada Multiclass Classification
 - Beberapa kelas minoritas menerima prediksi nol akibat jumlah sampel yang sangat rendah
 - Hal tersebut mencerminkan keterbatasan data, bukan kesalahan implementasi.
+
 ## Conclusion
 
 Model Random Forest akhir menunjukkan kinerja yang kuat pada kelas mayoritas sambil menyoroti tantangan dalam deteksi kegagalan yang jarang terjadi. Proyek ini menekankan reproduibilitas, kejujuran metodologis, dan evaluasi yang transparan.
