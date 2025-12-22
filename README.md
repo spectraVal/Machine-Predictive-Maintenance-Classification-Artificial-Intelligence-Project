@@ -67,7 +67,7 @@ venv\Scripts\python.exe -m final_run.main_final
 Jika ingin menjalankan file eksperimen atau keseluruhan percobaan, silahkan:
 
 ```
-python -m experiments.run_experiments
+venv\Scripts\python.exe -m experiments.run_experiments
 ```
 
 ## Output Files
