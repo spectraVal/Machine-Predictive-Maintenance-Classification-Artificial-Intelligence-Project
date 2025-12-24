@@ -1,13 +1,13 @@
 @echo off
 title Machine Predictive Maintenance - Final Run
 
-echo ==============================================
+echo ==================================================
 echo  MACHINE FAILURE CLASSIFICATION
 echo  Final Experiment Run
-echo ==============================================
-echo  Creator: -. Muhamad Rival Maulana (230611055)
-echo           -. Isak Sabam Tambunan   (230611132)
-echo ==============================================
+echo ==================================================
+echo  Creator: -. Muhamad Rival Maulana     (230611055)
+echo           -. Isak Sabam Tambunan       (230611132)
+echo ==================================================
 echo.
 
 REM --- Check virtual environment ---
@@ -25,8 +25,8 @@ echo.
 venv\Scripts\python.exe -m final_run.main_final
 
 echo.
-echo ============================================
+echo ==================================================
 echo Execution finished.
 echo Output files are available in the outputs/ folder.
-echo ============================================
+echo ==================================================
 pause

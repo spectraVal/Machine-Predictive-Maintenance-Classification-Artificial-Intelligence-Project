@@ -59,15 +59,21 @@ Jika reviewer ingin melakukan eksperimen tanpa command line, metode ini akan san
 
 Untuk pengguna yang lebih suka melakukan eksekusi langsung melalui command line, berikut step by stepnya:
 
-```
+```bash
 pip install -r requirements.txt
 venv\Scripts\python.exe -m final_run.main_final
 ```
 
 Jika ingin menjalankan file eksperimen atau keseluruhan percobaan, silahkan:
 
-```
+```bash
 venv\Scripts\python.exe -m experiments.run_experiments
+```
+
+Jika ingin menjalankan fitur visualisasi dari program ini, silahkan:
+
+```bash
+venv\Scripts\python.exe src/visualization/generate_all.py
 ```
 
 ## Output Files
@@ -75,7 +81,7 @@ venv\Scripts\python.exe -m experiments.run_experiments
 All outputs are saved in:
 
 ```bash
-outputs/final/
+outputs/
 ```
 
 ```
